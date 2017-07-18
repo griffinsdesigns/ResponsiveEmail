@@ -14,15 +14,80 @@
 	}
 	
 	@media screen and (max-width:480px){
-		table{
+		table, .leftColumn, .rightColumn, tr.secondRow img, tr.thirdRow img{
 			width:100%;
 		}
+        
+        .leftColumn div, .rightColumn div {
+            width: 93% !important;
+            margin-left: 1.5% !important;
+        }
+        
+        .fourthRow td {
+            padding-bottom: 3% !important;
+        }
 	}
 	
 	@media screen and (max-width:320px){
+        img{
+            width: 80%;
+        }
+        
 		.leftColumn, .rightColumn {
 			width:100%;
 		}
+        
+        .secondRow td{
+            padding-left: 3.5% !important;
+            padding-right: 3.5% !important;
+            padding-top: 3.5% !important;
+        }
+        
+        /* This is bad practice, I think (using div in email) */
+        .secondRow div{
+            padding-top:2.5% !important;
+        }
+        
+        .secondRow h2{
+            font-size:1.7em !important; 
+            margin-top:2%;
+        }
+        
+        p{
+            font-size: .8em !important;
+        }
+        
+        .leftColumn {
+            margin-left: 2% !important;
+        }
+        
+        /* This is bad practice, I think (using div in email) */
+        .leftColumn div, .rightColumn div {
+            padding-right: 2.5% !important;
+            width: 87% !important;
+        }
+        
+        .rightColumn{
+            padding-left:3% !important;
+        }
+        
+        /* This is bad practice, I think (using div in email) */
+        td.rightColumn div{
+            margin-left: 4% !important;
+            width:86.5% !important;
+        }
+        
+        .fourthRow td{
+            padding-left: 2.5% !important;
+            padding-right: 2.5% !important;
+            padding-top: 4% !important;
+            padding-bottom: 4% !important;
+        }
+        
+        small{
+            line-height: 0em !important;
+        }
+        
 	}
 
 </style>
@@ -32,12 +97,12 @@
 <center>
 	<table style="background-color:#f3f3f4; border-spacing:0;">
 		<tbody>
-			<tr>
+			<tr class="firstRow">
 				<td style="text-align: center; background-color: #FFFFFF;"><h1 style="font-size: 0px;"><img src="images/AfterHours-logo.png" alt="After Hours logo"></h1></td>
 				
 			</tr><!----- end header ----->
 			
-			<tr>
+			<tr class="secondRow">
 				<td style="padding-left:1.5%;padding-right:1.5%;padding-top:1.5%;">
 					<img src="images/tutoring.jpg" alt="tutoring"/>
 					<div style="background-color: #FFFFFF; padding-left:2.5%; padding-right:2.5%; padding-bottom: 1%;">
@@ -47,7 +112,7 @@
 				</td>
 			</tr><!---  end hero/banner -->
 			
-			<tr>
+			<tr class="thirdRow">
 				<td class="leftColumn" style="float:left;margin:0;padding:0;">
 					<div style="width:90%;margin-left:2.5%;margin-top:2.5%; padding:10px; padding-bottom: 22px; padding-top:2.5%; background-color: #FFFFFF;">
 						<img style="margin-bottom: 1em;" src="images/test.jpg" alt="taking a test"/>
@@ -57,7 +122,7 @@
 				</td><!--- end of left --->
 				
 				<td class="rightColumn" style="float:right;margin:0;padding:0;">
-					<div style="width:90%;margin-left:2.5%;margin-top:2.5%; padding:10px; padding-top:2.5%;background-color: #FFFFFF;">
+					<div style="width:90%;margin-left:2%;margin-top:2.5%; margin-right:3%; padding:10px; padding-top:2.5%;background-color: #FFFFFF;">
 						<img style="margin-bottom: 1em;" src="images/girl-smiling.jpg" alt="girl smiling"/>
 						<h3 style="font-family: Arial, verdana; font-size: 1.4em; line-height: 1.2em; color: #1f9601; text-align: center; margin: 0; padding: 0;">What Our Customers Say</h3><br>
 						<p style="font-family: Arial, verdana; font-size:1em; line-height: 1.25em; color: #525252; margin: 0; padding: 0;"><i>"I'm glad I took the SAT Prep course. The course really got me prepared for the test."</i> -Sarah</p><br/>
@@ -65,7 +130,7 @@
 					</div>
 				</td><!----- end of right -->
 			</tr>
-			<tr style="margin-top: 0;padding-top:0;">
+			<tr class="fourthRow" style="margin-top: 0;padding-top:0;">
 				<td style="padding-top: 2%; padding-bottom:2%; margin:0; text-align: center;">
 					<small style="font-family: Arial, verdana; font-size:.5em; line-height: 1.25em; color: #525252; margin: 0; padding: 0;">©After Hours All rights reserved. <br/>1702 Norman Way Madison, WI 53705. support@afterhours.com (608)262-2222</small>
 				</td>
