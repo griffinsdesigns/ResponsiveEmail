@@ -1,3 +1,3 @@
 # ResponsiveEmail
 
-A small responsive email code sample.
+A test for doing a responsive email. This has NOT been tested.
