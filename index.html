@@ -3,8 +3,50 @@
 <head>
 <meta charset="utf-8">
 <title>Responsive Email Code Sample</title>
+
+<style>
+	table{
+		width:800px;
+	}
+	
+	.leftColumn, .rightColumn {
+		width: 50%;
+	}
+	
+	@media screen and (max-width:480px){
+		table{
+			width:100%;
+		}
+	}
+	
+	@media screen and (max-width:320px){
+		.leftColumn, .rightColumn {
+			width:100%;
+		}
+	}
+
+</style>
 </head>
 
 <body>
+<center>
+	<table>
+		<tbody>
+			<tr>
+				<td style="text-align: center;">something</td>
+				
+			</tr>
+			<tr>
+				<td class="leftColumn" style="float:left;margin:0;padding:0;">My left</td>
+				<td class="rightColumn" style="float:right;margin:0;padding:0;">my Right</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">
+					My bottom
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</center>
 </body>
 </html>
